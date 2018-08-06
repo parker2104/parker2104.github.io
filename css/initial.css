@@ -1,0 +1,91 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+mark {
+    background-color: transparent;
+    color: black;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+html {
+    background: #f7f7f7;
+    min-height: 100%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0 0px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: auto;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: rgb(128, 128, 128);
+}
+
+textarea:focus {
+    border: none;
+    box-shadow: none;
+    outline: 0 !important;
+}
+
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {color:#728494;}
+::-moz-placeholder          {color:#728494;}/* Firefox 19+ */
+:-moz-placeholder           {color:#728494;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#728494;}
+
+:read-write:focus {
+     outline: none;
+}
+
+:-moz-read-write:focus {
+     outline: none;
+}
+
+nwrap {
+    display: block;
+    white-space: nowrap;
+}
