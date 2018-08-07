@@ -1,5 +1,3 @@
-/* Категории */
-
 .categories-flow {
     display: -webkit-box;
     display: -webkit-flex;
@@ -131,8 +129,6 @@
 	}
 }
 
-/*  */
-
 .page-sub-title {
     font-weight: 800;
     color: #484747;
@@ -184,9 +180,6 @@
 .page-sub-title-group a:hover .page-sub-title-item {
 	color: #484747;
 }
-
-/* Контакты */
-
 
 .contacts-info-block {
     font-size: 20px;
@@ -315,9 +308,6 @@
 	
 }
 
-
-/* Галерея */
-
 .gallery {
 	margin-top: 820px;
 	-webkit-animation: galleryUpInLoad 3s 0.2s forwards, fadeInLoad 3.5s 1.5s forwards;
@@ -336,6 +326,15 @@
 .gallery img:hover {
 	-webkit-filter: grayscale(0);
 	        filter: grayscale(0);
+}
+
+@media(max-width: 477px) {
+	
+	.gallery img:hover {
+		-webkit-filter: initial;
+				filter: initial;
+	}
+	
 }
 
 .gallery a {
@@ -360,12 +359,30 @@
             box-shadow: 0px 2px 1px #00000036;
 }
 
+@media(max-width: 477px) {
+	
+	.gallery a img {
+		-webkit-filter: initial;
+				filter: initial;
+	}
+	
+}
+
 .gallery:hover a:not(:hover) img {
 	-webkit-filter: grayscale(100%);
 	        filter: grayscale(100%);
 	-webkit-transform: scale(0.95);
 	    -ms-transform: scale(0.95);
 	        transform: scale(0.95);
+}
+
+@media(max-width: 477px) {
+	
+	.gallery:hover a:not(:hover) img {
+		-webkit-filter: initial;
+				filter: initial;
+	}
+	
 }
 
 .main-index-block__data:hover .gallery a img {
@@ -437,8 +454,6 @@
 		        filter: grayscale(0);
 	}
 }
-
-/* просмотр галереи */
 
 .gb-loader, .galleryPane {
 	line-height: 0;
@@ -652,8 +667,6 @@
 	filter: alpha(Opacity=100);
 	opacity: 1;
 }
-
-/* цены */
 
 .prices-info-block__items {
     display: -webkit-box;
@@ -947,8 +960,6 @@ p.prices-info-block__item-desc-sep-s2 {
 	cursor: default;
 }
 
-/* about */
-
 .about-info-block {
     display: flex;
 }
@@ -1068,4 +1079,39 @@ p.prices-info-block__item-desc-sep-s2 {
 .flip-container-z {
     width: 298px;
 	overflow: hidden;
+}
+
+.p404-info-block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 80px;
+}
+
+.p404-title {
+    font-size: 72px;
+    color: #848181;
+}
+
+.p404-desc {
+    font-family: PT Sans;
+    font-size: 16px;
+}
+
+.p404-desc a {
+	cursor: pointer;
 }
